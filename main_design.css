@@ -1,0 +1,164 @@
+section1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+section1>h1{
+    font-size: 40px;
+    padding: 0%;
+    margin: 1% 0;
+}
+
+section1>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section1>div>img {
+    margin-top: 60px;
+}
+
+section1>div>p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    max-width: 1000px;
+    margin-top: 30px;
+}
+
+section1>div>a {
+    font-size: 25px;
+    font-weight: normal;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #19164F;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+section1>div>a:hover{
+    background-color: #19164f44;
+    color: black;
+}
+
+section1>div>button{
+    padding: 10px;
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+section1>div>button:hover{
+    text-decoration: underline;
+    background-color: lightgray;
+    border: 2px dashed black;
+    border-radius: 30px;
+    
+}
+
+section1>div>button:focus{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+
+}
+
+section1{
+    background-image: url("sec1_p1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+
+/*section2*/
+section2>button{
+    border: none;
+    background-color: white;
+    opacity: 30%;
+    border-radius: 100px;
+}
+
+section2>button:hover{
+    background-color: none;
+    border-radius: 0%;
+    opacity: 100%;
+}
+
+#left_button{
+    float: left;
+}
+
+#right_button{
+    float: right;
+}
+
+#container1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+section2>div>img{
+    margin: 15%;
+}
+
+.news{
+    display: block;
+}
+
+
+
+/*section3*/
+#section3{
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(180, 180, 180));
+    margin-bottom: 1%;
+    padding-bottom: 30px;
+}
+
+
+
+#section3>h1{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+#container2>a{
+    text-decoration: none;
+}
+
+#cs, #faqs{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 30px; 
+    padding-bottom: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#cs{
+    background-image: linear-gradient(rgba(110, 126, 183, 70%), rgba(29, 52, 138, 70%));
+}
+
+#faqs{
+    background-image: linear-gradient(rgba(169, 116, 104, 0.7), rgba(172, 72, 9, 0.7));
+}

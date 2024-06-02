@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PocketDoctor</title>
+        <link rel="icon" type="image/x-icon" href="SMALL_logo.png">
+        <link rel="stylesheet" href="main_design.css">
+        <link rel="stylesheet" href="header_footer.css">
+        <script>
+            function showPage(pageId) {
+                // Hide all pages
+                var pages = document.querySelectorAll('section1>div[id^="page"]');
+                pages.forEach(function(page) {
+                    page.style.display = 'none';
+                });
+                // Show the selected page
+                document.getElementById(pageId).style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>        
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="Mainpage.html"><img src="BIG_logo.png" alt="Pocket Doctor" width="220px" height="45px"></a>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="/About us/about_us.html">About us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Services ▼</a>
+                        <div class="dropdown-content">
+                            <a href="/Symptom checker/symptom_checker.html">Symptom Checker</a>
+                            <a href="/Appointment booking/appointment_booking.html">Appointment Booking</a>
+                            <a href="/Personal health records/health_records.html">Personal Health Records</a>
+                            <a href="/Medication reminder/med_reminder.html">Medication Reminder</a>
+                            <a href="/Health tips&articles/health_tna.html">Health tips & articles</a>
+                            <a href="/Emergency assistance/emer_assist.html">Emergency assistance</a>
+                        </div>
+                    </li>
+                    <li><a href="/News & Events/new_events.html">News & Events</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Support ▼</a>
+                        <div class="dropdown-content">
+                            <a href="/Live chat/live_chat.html">Live Chat</a>
+                            <a href="/Faqs/faqs.html">FAQs</a>
+                            <a href="/Feedback/feedback.html">Feedback</a>
+                        </div>
+                    </li>
+                    <li ><a href="">Login</a></li>
+                    <li><a href="">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section1>
+         <!--SECTION 1 HEADER-->
+            <h1>Services</h1>
+            <div style=" display: inline-block;">
+                <button onclick="showPage('page1')" >Symptom Checker</button>
+                <button onclick="showPage('page2')">Appointment Booking</button>
+                <button onclick="showPage('page3')">Personal Health Records</button>
+                <button onclick="showPage('page4')">Medication Reminders</button>
+                <button onclick="showPage('page5')">Health tips & articles</button>
+                <button onclick="showPage('page6')">Emergency Assistance</button> 
+            </div>
+                     
+
+            <!--SECTION 1 PAGE 1 CONTENT-->
+            <div id="page1">
+               <img  src="symChecker_logo.png" alt="Symptom Checker" width="226px" height="226px">
+               <p >Input your symptoms, receive instant evaluations and gain insights into potential health conditions.</p>
+               <a href="/Symptom checker/symptom_checker.html">Learn more</a>
+            </div>
+            
+            <!-- SECTION 2 PAGE 2 CONTENT -->
+            <div id="page2" style="display: none;">
+                <img src="apmtBooking_logo.png" alt="Appointment Booking" width="226px" height="226px">
+                <p>Your convenience, your health. Schedule appointments hassle-free.</p>
+                <a href="/Appointment booking/appointment_booking.html">Book now</a>
+            </div>
+
+            <!-- SECTION 3 PAGE 3 CONTENT -->
+            <div id="page3" style="display: none;">
+                <img src="healthRecords_logo.png" alt="Personal Health Records" width="226px" height="226px">
+                <p>Effortlessly manage and access your comprehensive medical records anytime, anywhere.</p>
+                <a href="/Personal health records/health_records.html">Track it</a>
+            </div>
+
+            <!-- SECTION 4 PAGE 4 CONTENT -->
+            <div id="page4" style="display: none;">
+                <img src="mediReminder_logo.png" alt="Medication Reminders" width="226px" height="226px">
+                <p>Stay on top of your medication regimen with personalized reminders tailored to your needs.</p>
+                <a href="/Medication reminder/med_reminder.html">Remind me</a>
+            </div>
+
+            <!-- SECTION 5 PAGE 5 CONTENT -->
+            <div id="page5" style="display: none;">
+                <img src="healthTips_logo.png" alt="Health Tips & Articles" width="226px" height="226px">
+                <p>Explore a wealth of health tips, articles, and insights to support your wellness journey.</p>
+                <a href="/Health tips&articles/health_tna.html">Learn more</a>
+            </div>
+
+            <!-- SECTION 6 PAGE 6 CONTENT -->
+            <div id="page6" style="display: none;">
+                <img src="emergencyAsst_logo.png" alt="Emergency Assistance" width="226px" height="226px">
+                <p>In case of emergencies, connect instantly to essential services for swift assistance, prioritizing your safety.</p>
+                <a href="/Emergency assistance/emer_assist.html">Contact now</a>
+            </div>
+
+        </section1>
+        <!--SECTION 2 IS FOR NEWS & EVENTS-->
+        <section2 id="container1">
+            <button id="left_button"><img src="arrow.png" weight="75px" height="75px" style="rotate: 180deg;"></button>
+            <div class="news">
+                <h2>Unraveling the Gut-Brain Connection:<br> 
+                    Groundbreaking Study Reveals Link <br>
+                    Between Gut Bacteria and Mental Health</h2>
+                <p>Researchers at a leading university have discovered a link <br>
+                    between the composition of gut bacteria and mental <br>
+                    health disorders such as depression and anxiety. The <br>
+                    study suggests that certain strains of bacteria may play<br>
+                    a role in regulating mood and could lead to innovative <br>
+                    treatments for mental health conditions</p>
+            </div>
+            <div>
+                <img src="sec2_p1.jpg" alt="doctor" width="400px" height="550px">
+            </div>
+            <button id="right_button"><img src="arrow.png" weight="75px" height="75px"></button>
+        </section2>
+        <!--SECTION 3 FOR CUSTOMER SUPPORT-->
+        <section id="section3">
+            <h1>Need Help?</h1>
+            <div id="container2">                
+               <a href="/Live chat/live_chat.html">
+                    <div id="cs">
+                      <img src="customerService_logo.png" alt="Customer Service" width="263px" height="263px">
+                      <p>Customer Service</p>
+                    </div>  
+                </a>                         
+                <a href="/Faqs/faqs.html">
+                    <div id="faqs" >
+                      <img src="FAQs_logo.png" alt="FAQs" width="263px" height="263px">
+                      <p>FAQs</p>
+                    </div>
+                </a>
+                
+                
+            </div>                        
+        </section>
+        <footer>
+            <div id="ft1" style="background-color: #19164F;">
+                <div>
+                    <img src="BIG_logo.png" alt="PocketDoctor" width="152px" height="34px" style="margin-left: 25px;margin-top: 30px;">
+                    <a href="/About us/about_us.html">About Us</a>
+                    <a href="/Symptom checker/symptom_checker.html">Symptom Checker</a>
+                    <a href="/Faqs/faqs.html">FAQs</a>
+                    <a href="/News & Events/new_events.html" style="margin-bottom: 30px;">News & Events</a>
+                </div>
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <a href="https://www.gmail.com">insightinnovators@gmail.com</a>
+                    <div>
+                        <a href="https://www.facebook.com"><img id="fb" src="facebook_icon.png" alt="Facebook" width="21px" height="21px" ></a>
+                        <a href="https://www.instagram.com"><img id="ig" src="instagram_icon.png" alt="Instagram" width="21px" height="21px"></a>
+                        <a href="https://www.twitter.com"><img id="X" src="X_icon.png" alt="X" width="21px" height="21px"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="ft2" style="background-color: white;">
+                <p>Copyright © 2024 Insight Innovators. All rights reserved.&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="/privacy policy/privacy_policy.html">Privacy policy</a>&nbsp&nbsp&nbsp&nbsp
+                <a href="/Terms of use/terms.html">Terms of use</a>&nbsp&nbsp&nbsp&nbsp
+                <a href="/Legal/legal.html">Legal</a>&nbsp&nbsp&nbsp&nbsp
+                <a href="/Site map/site_map.html">Site Map</a>&nbsp&nbsp&nbsp&nbsp
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
